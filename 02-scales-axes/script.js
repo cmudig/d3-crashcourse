@@ -5,13 +5,13 @@ d3.csv("../beer.csv").then((table) => {
 
   let barDiv = document.querySelector("#bar-div");
 
-  // Q2.1 Ordinal Scale
+  // Q2.1 Create a band (ordinal) scale for the x axis of a bar chart showing ABV of the first 5 beers
   let xScale = d3
     .scaleBand()
     .domain(table.slice(0, 10).map((d) => d.name))
     .range([0, barDiv.clientWidth]);
 
-  // Q2.2
+  // Q2.2 Create a linear (quantitative) scale for the y axis of a bar chart showing ABV of the first 5 beers
   let yScale = d3
     .scaleLinear()
     .domain(d3.extent(table, (d) => d.abv))

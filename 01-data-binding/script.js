@@ -17,7 +17,7 @@ d3.csv("../beer.csv").then((table) => {
     .append("p")
     .text((d) => d.name);
 
-  // Q1.4
+  // Q1.4 Create simple bars representing the ABV of the first 5 beers.
   let svgDiv = document.querySelector("#svg-div");
   d3.select(svgDiv)
     .append("svg")
