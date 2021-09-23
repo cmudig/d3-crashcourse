@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../static/style.css" />
     <title>D3 Crash Course</title>
     <link
       rel="stylesheet"
@@ -21,25 +21,67 @@
     <main>
       <h1>Data Binding</h1>
       <p>
-        Data-Driven Documents -> main purpose of D3 is to connect to the data.
+        <b>Data-Driven Documents</b> - D3 is primarily a library for binding
+        data to visual encodings.
       </p>
       <h4>The DOM</h4>
-      <p>What's the DOM?</p>
-      <p>Add a text element to this div using JS.</p>
+      <p>
+        The DOM (Document Object Model) is a tree representation of HTML
+        documents which can be programmatically manipulated from JavaScript.
+      </p>
 
-      <p>Use developer tools/console to find it</p>
+      <p class="problem">
+        <b>Q1.1</b> Select the "text-div" div and set the text to "Hello World".
+      </p>
+      <div class="output" id="text-div"></div>
+
+      <p>
+        Browser developer tools are an invaluable tool for debugging DOM
+        operations. Right click on the text you added and select
+        <code>inspect element</code> to see the new leaf node you added to the
+        div.
+      </p>
 
       <h4>Data</h4>
-      <p>Load data</p>
+      <p>D3 provides various helper functions for loading data.</p>
 
-      <p>console.log() to look at data.</p>
+      <p class="problem">
+        <b>Q1.2</b> Load "beer.csv" and log it to the console.
+      </p>
+
+      <p>
+        <code>console.log()</code> writes output to the console, which can be
+        seen in the browser developer tools.
+      </p>
 
       <h4>Binding Data to the DOM</h4>
 
-      <p>We want to represent our data as DOM objects</p>
+      <p>
+        Now we can test the key feature of D3, binding data entries to DOM
+        elements.
+      </p>
+
+      <p class="problem"><b>Q1.3</b> List the first 5 beers in the table.</p>
+      <div class="output" id="data-div"></div>
+
+      <h4>Binding Data to SVGs</h4>
+
+      <p>
+        While HTML elements can be used to represent data, SVG (Scalable Vector
+        Graphics) are a much more powerful API for displaying graphical
+        representations.
+      </p>
+
+      <p>
+        <b>Q1.4</b> Create simple bars representing the ABV of the first 5
+        beers.
+      </p>
+      <div class="output" id="svg-div"></div>
 
       <div id="app"></div>
-      <a href="../">Home</a>
+      <div style="margin-top: 50px; margin-bottom: 100px">
+        <a href="../">Home</a>
+      </div>
       <script type="module" src="./script.js"></script>
     </main>
   </body>
