@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D3 Crash Course</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./static/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -17,23 +17,44 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
   <body>
-    <main>
-      <h1>D3 Crash Course</h1>
+    <main style="margin-bottom: 100px">
+      <h2>D3 Crash Course</h2>
+      <h6>Alex Cabrera, Februray 28, 2021</h6>
       <h4>Why D3?</h4>
-      <p>We've learned Vega. What's the point of D3?</p>
       <p>
-        D3 is much more raw and flexible. You can describe exactly how you want
-        to represent your data. No fixed layouts, templates, nothing.
+        Libraries like Vega, Vega-Lite, matplotlib, and ggplot can be used to
+        create a wide range of visualizations and graphs. These libraries define
+        encodings from data to a fixed set of marks and representations. But
+        what if we want to create a complex visualization not defined by Vega?
+      </p>
+      <img src="./static/complexity.png" width="300" />
+      <p>
+        D3 is a lower-level library in which users directly bind data to visual
+        representations. This flexibility enables a huge range of custom,
+        complex visualizations. At the same time, it requires significant effort
+        to implement features like tooltips and axes labels that are automatic
+        in Vega.
+      </p>
+      <p>
+        These crash course exercises, paired with the presentation slides,
+        provide an overview of the key components of D3. Running this website in
+        development mode, you should see the different exercises, <b>Q#.#</b>,
+        in the <code>script.js</code> files of each subpage.
       </p>
       <h3>Table of Contents</h3>
       <ol>
         <li><a href="/01-data-binding/">Data Binding</a></li>
         <li><a href="/02-scales-axes/">Scales and Axes</a></li>
-        <li><a href="/03-updates/">Updates</a></li>
+        <li><a href="/03-updates-transitions/">Updates and Transitions</a></li>
         <li><a href="/04-chart/">Complex Chart Example</a></li>
       </ol>
       <h3>Other Resources</h3>
       <ol>
+        <li>
+          <a href="https://github.com/d3/d3/blob/main/API.md"
+            >Full API Reference</a
+          >
+        </li>
         <li>
           <a href="https://observablehq.com/@d3/learn-d3"
             >Official Observable Tutorial</a
@@ -45,7 +66,6 @@
           >
         </li>
       </ol>
-      <script type="module" src="/main.js"></script>
     </main>
   </body>
 </html>

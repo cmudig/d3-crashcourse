@@ -5,7 +5,7 @@ let textDiv = document.querySelector("#text-div");
 textDiv.innerHTML = "Hello World";
 
 // Q1.2 Load "beer.csv" and log it to the console.
-d3.csv("../beer.csv").then((table) => {
+d3.csv("../static/beer.csv").then((table) => {
   console.log(table);
 
   // Q1.3 List the first 5 beers in the table.

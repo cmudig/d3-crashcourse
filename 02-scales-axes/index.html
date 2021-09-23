@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../static/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,14 +18,43 @@
   </head>
   <body>
     <main>
-      <h1>Scales</h1>
-      <p>How do we tell d3 how to scale and convert our data?</p>
+      <h1>Scales and Axes</h1>
+      <p>
+        Next, D3 has a series of helper functions for defining scales and axes.
+        We will be improving the bars from the last problem to make it a true
+        bar chart.
+      </p>
 
-      <h4>Ordinal Scale</h4>
+      <h4>Scales</h4>
+      <p>
+        Scales work just like they do in Vega, but the domain and range have to
+        be manually specified.
+      </p>
+
+      <p>
+        <b>Q2.1</b> Create a band (ordinal) scale for the x axis of a bar chart
+        showing ABV of the first 5 beers
+      </p>
+      <p>
+        <b>Q2.2</b> Create a linear (quantitative) scale for the y axis of a bar
+        chart showing ABV of the first 5 beers
+      </p>
+
+      <h4>Axes</h4>
+      <p>
+        From a scale, D3 has functions to generate axes that can be displayed on
+        a visualization.
+      </p>
+
+      <p><b>Q2.3</b> Create and display an x axis</p>
+      <p><b>Q2.4</b> Create and display a y axis</p>
+
       <div class="output" id="bar-div"></div>
 
       <div id="app"></div>
-      <a href="../">Home</a>
+      <div style="margin-top: 50px; margin-bottom: 100px">
+        <a href="../">Home</a>
+      </div>
       <script type="module" src="./script.js"></script>
     </main>
   </body>
