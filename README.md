@@ -7,9 +7,10 @@ To see the answers, check out the `solutions` branch of this repository with `gi
 ## Installation
 
 1. Install Node.js and NPM from https://nodejs.org/en/download/. You should be able to run `npm -v` from command line or command prompt.
-2. Clone this repository, `git clone https://github.com/cmudig/d3-crashcourse`.
-3. In this folder, run `npm i` to install the dependencies.
-4. Run `npm run dev` to watch for changes and host the web application.
-5. Test the application by changing `Alex Cabrera` to your name in `index.html`. The webpage should automatically reload and show your name.
+2. Install VS Code from https://code.visualstudio.com/, the recommended IDE/text editor.
+3. Clone this repository, `git clone https://github.com/cmudig/d3-crashcourse`.
+4. In this folder, run `npm i` to install the dependencies.
+5. Run `npm run dev` to watch for changes and host the web application.
+6. Test the application by changing `Alex Cabrera` to your name in `index.html` using VS Code. The webpage should automatically reload and show your name.
 
 Please email cabrera@cmu.edu if you run into any issues, or come to office hours for debugging.
