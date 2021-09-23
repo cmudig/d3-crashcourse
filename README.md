@@ -1,7 +1,7 @@
 # D3 Crash Course
 
-This is the accompanying web application for the D3 Crash Course in 05499: Data Visualization.
-It provides a series of exercises for learning the basic mechanisms of D3.
+This is the accompanying web application for the D3 Crash Course in [05499: Data Visualization](https://dig.cmu.edu/courses/2021-fall-datavis.html).
+It provides a series of exercises for learning the basic mechanisms of [D3](https://d3js.org/).
 To see the answers, check out the `solutions` branch of this repository with `git checkout solutions`
 
 ## Installation
