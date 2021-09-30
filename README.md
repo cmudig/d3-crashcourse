@@ -11,6 +11,7 @@ To see the answers, check out the `solutions` branch of this repository with `gi
 3. Clone this repository, `git clone https://github.com/cmudig/d3-crashcourse`.
 4. In this folder, run `npm i` to install the dependencies.
 5. Run `npm run dev` to watch for changes and host the web application.
-6. Test the application by changing `Alex Cabrera` to your name in `index.html` using VS Code. The webpage should automatically reload and show your name.
+6. Open the URL displayed in the terminal (usually http://localhost:3000/). If you open the html file directly, your changes will not update the website.
+7. Test the application by changing `Alex Cabrera` to your name in `index.html` using VS Code. The webpage should automatically reload and show your name.
 
 Please email cabrera@cmu.edu if you run into any issues, or come to office hours for debugging.
